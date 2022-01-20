@@ -56,9 +56,13 @@ public class Player : MonoBehaviour
     private async UniTask PlayerAnimationUnitask()
     {
         var ct = this.GetCancellationTokenOnDestroy();
-        await UniTask.WhenAll(transform.DOMoveZ(15f, 3f).WithCancellation(ct));  
+        await UniTask.Delay(100);
+        await UniTask.WhenAll(transform.DOMoveZ(15f, 3f).WithCancellation(ct));
+        await UniTask.Delay(50);
         await UniTask.WhenAll(transform.DOJump(transform.position, 1f, 1, 1f).WithCancellation(ct));
+        await UniTask.Delay(50);
         await UniTask.WhenAll(transform.DORotate(new Vector3(0, 180, 0), 1f).WithCancellation(ct));
+        await UniTask.Delay(50);
         await UniTask.WhenAll(transform.DOMoveZ(10f, 3f).WithCancellation(ct));
         Finish();
     }
