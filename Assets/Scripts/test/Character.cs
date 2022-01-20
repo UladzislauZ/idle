@@ -42,22 +42,26 @@ public class Character : MonoBehaviour
 
         if (_state == 0)
         {
+            _state = -1;
             transform.DOMove(Vector3.forward * 3f, 3f).SetEase(Ease.Flash).OnComplete(() => _state = 1);
         }
 
         if (_state == 1)
         {
+            _state = -1;
             transform.DORotate(new Vector3(0, 180, 0), 1.9f);
             transform.DOJump(transform.position, 2f, 1, 2f).OnComplete(() => _state = 2);
         }
 
         if (_state == 2)
         {
+            _state = -1;
             transform.DOMove(Vector3.zero, 3f).OnComplete(() => _state = 3);
         }
 
         if (_state == 3)
         {
+            _state = 0;
             transform.rotation = Quaternion.Euler(Vector3.zero);
             OnComplete.Invoke();
             _isAlive = false;
@@ -73,7 +77,7 @@ public class Character : MonoBehaviour
         yield return new DOTweenCYInstruction.WaitForCompletion(transform.DOJump(transform.position, 2f, 1, 2f));
         yield return new DOTweenCYInstruction.WaitForCompletion(transform.DOMove(Vector3.zero, 2f));
         
-        /* Based on transform.position
+        /* //Based on transform.position
         int state = 0;
          
         while (state == 0)
