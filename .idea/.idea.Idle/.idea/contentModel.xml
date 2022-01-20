@@ -30,9 +30,11 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="ButtonAnim.cs" t="Include" />
-          <e p="Character.cs" t="Include" />
           <e p="LookToCam.cs" t="Include" />
+          <e p="test" t="Include">
+            <e p="ButtonAnim.cs" t="Include" />
+            <e p="Character.cs" t="Include" />
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
