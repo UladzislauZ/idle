@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+namespace Homework
+{ 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private Player player;
@@ -54,5 +56,7 @@ public class GameManager : MonoBehaviour
     {
         _uIController.OpenMenu();
     }
+
+}
 
 }

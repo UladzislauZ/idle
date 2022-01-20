@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3749894328125108303}
   m_Layer: 5
-  m_Name: Top Pnael
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,8 +46,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3749894328470975397}
   - component: {fileID: 3749894328470975398}
+  - component: {fileID: 8504594331112999887}
   m_Layer: 5
-  m_Name: GameScreen
+  m_Name: GamePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,6 +82,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3749894328470975396}
   m_CullTransparentMesh: 0
+--- !u!114 &8504594331112999887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3749894328470975396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3bf6fccf912a14e88a85c280a94376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyText: {fileID: 2862477338701409329}
 --- !u!1 &3749894328793956267
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +184,7 @@ GameObject:
   - component: {fileID: 3749894328958863590}
   - component: {fileID: 3749894328958863589}
   m_Layer: 5
-  m_Name: MainScreen
+  m_Name: MenuPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -309,8 +323,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284589821
-  m_fontColor: {r: 0.990566, g: 0.65078145, b: 0.378471, a: 1}
+    rgba: 4294901950
+  m_fontColor: {r: 0.7446065, g: 0, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -434,7 +448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: START
+  m_text: Start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -443,8 +457,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278207350
-  m_fontColor: {r: 0.46226418, g: 0.2644059, b: 0, a: 1}
+    rgba: 4287957368
+  m_fontColor: {r: 0.46918702, g: 0.03586687, b: 0.5849056, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -568,7 +582,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Idle
+  m_text: Idle Game
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -757,7 +771,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3749894329825235259}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3749894329929197914
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +796,7 @@ GameObject:
   - component: {fileID: 3749894329929197917}
   - component: {fileID: 3749894329929197916}
   - component: {fileID: 3749894329929197915}
+  - component: {fileID: 4700219953640627043}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -859,6 +886,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4700219953640627043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3749894329929197914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7df2317a69bb31b488a90b70dc668201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuPanel: {fileID: 3749894328958863587}
+  gamePanel: {fileID: 3749894328470975396}
 --- !u!1 &9000398939576985255
 GameObject:
   m_ObjectHideFlags: 0
