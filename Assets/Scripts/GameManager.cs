@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         get => _money;
         set
         {
+            Debug.Log(value);
             if (value < 0)
                 return;
             if (value == _money)
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
             _money = value;
             _money = (float)Math.Round(_money, 2);
             OnMoneyValueChange?.Invoke(_money);
+          
         }
     }
     
@@ -43,6 +45,10 @@ public class GameManager : MonoBehaviour
         _uIControllerIDLE = FindObjectOfType<UIControllerIDLE>();
         _saveSystem.Initialize();
         _money = _saveSystem.GameData.Money;
+    }
+    private void Start()
+    {
+       
         _buildingController.Initialize(_saveSystem.GameData);
         _uIControllerIDLE.SwitchPanels(true);
     }

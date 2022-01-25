@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,9 +13,35 @@ public class BuildingController : MonoBehaviour
         for (int i = 0; i < buildingData.Length; i++)
         {
             _buildItems[i].Initialize(buildingData[i].IsUnlock, buildingData[i].UpgradeLevel);
+            _buildItems[i].OnProcess += OnProcess;
+            _buildItems[i].OnBuildUpgrade += OnBuildUpgrade;
+        }
+    }
+
+    private void OnDestroy()
+    {
+        for (int i = 0; i < _buildItems.Length; i++)
+        {
+            if (_buildItems[i] != null)
+            {
+                _buildItems[i].OnProcess -= OnProcess;
+                _buildItems[i].OnBuildUpgrade -= OnBuildUpgrade;
+            }
+               
 
         }
     }
+
+    private void OnBuildUpgrade(float value)
+    {
+        GameManager.Instance.Money -= value;
+    }
+
+    private void OnProcess(int value)
+    {
+        GameManager.Instance.Money += value;
+    }
+
     public BuildingData[] GetBuildingData()
     {
         var data = new BuildingData[_buildItems.Length];

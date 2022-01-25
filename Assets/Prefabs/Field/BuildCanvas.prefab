@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 4587449058645546561}
   - component: {fileID: 8767392965741476920}
   - component: {fileID: 6400800727008491734}
+  - component: {fileID: 2722836129437029243}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -234,19 +235,21 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8767392965741476920}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9220315107429761282}
-        m_TargetAssemblyTypeName: LookAtCamera, Assembly-CSharp
-        m_MethodName: OnClick
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
+--- !u!114 &2722836129437029243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7276952594455585042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 078802c033669714697f69609d3042df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _priceText: {fileID: 8609447526523969249}
+  _titleText: {fileID: 2646605766866864677}
 --- !u!1 &7717839523736513145
 GameObject:
   m_ObjectHideFlags: 0
@@ -393,7 +396,7 @@ GameObject:
   - component: {fileID: 1005342823087177544}
   - component: {fileID: 2646605766866864677}
   m_Layer: 0
-  m_Name: BuyText
+  m_Name: TitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
