@@ -6,7 +6,7 @@ public class GameData
 {
     private const int BuildingsCount = 4;
     
-    public float Money = 100f;
+    public float Money = 300f;
     public BuildingData[] BuildingDatas;
 
     public GameData()

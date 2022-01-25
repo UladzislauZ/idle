@@ -40,8 +40,13 @@ public class GameManager : MonoBehaviour
         _saveSystem = GetComponent<SaveSystem>();
         _saveSystem.Initialize();
         _money = _saveSystem.GameData.Money;
+    }
+
+    private void Start()
+    {
         _buildingController.Initialize(_saveSystem.GameData);
         _uiController.SwitchPanel(true);
+        OnMoneyValueChange?.Invoke(_money);
     }
 
     private void OnApplicationFocus(bool hasFocus)
