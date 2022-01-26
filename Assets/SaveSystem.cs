@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class SaveSystem : MonoBehaviour
 {
-    private GameData _gameData;
     private const string DataKey = "GameData";
+
+    private GameData _gameData;
     public GameData GameData => _gameData;
     public void Initialize()
     {

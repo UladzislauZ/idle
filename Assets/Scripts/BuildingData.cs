@@ -1,12 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class BuildingData 
 {
     public bool IsUnlock;
-    public int UpgradeLevel;
+    public int UpgradeLevel = 0;
 
     public BuildingData()
     {

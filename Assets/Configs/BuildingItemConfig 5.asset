@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BuildingItemConfig 5
   m_EditorClassIdentifier: 
   _model: {fileID: 3861076591352899273, guid: aa4e813e2d5455e4a872f31740795c30, type: 3}
-  _processResult: 4
+  _processResult: 5

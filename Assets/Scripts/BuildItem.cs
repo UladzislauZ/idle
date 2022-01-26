@@ -7,7 +7,8 @@ public class BuildItem : MonoBehaviour
 {
     [SerializeField] private BuildingItemContainer _itemsContainer;
     [SerializeField] private Transform _modelPoint;
-    private BuildingButtonController _buttonController;
+
+    [SerializeField] private BuildingButtonController _buttonController;
     private GameObject _currentModel;
     private Coroutine _timerCoroutine;
 
@@ -27,22 +28,26 @@ public class BuildItem : MonoBehaviour
         IsUnlock = isUnlock;
         Level = level;
         GetComponentInChildren<Canvas>().worldCamera = Camera.main;
-        if (isUnlock && Level >= 0) SetModel(level);
+        if (isUnlock && Level >= 0) SetModel(Level);
         UpdateButtonState();
         GameManager.Instance.OnMoneyValueChange += _buttonController.OnMoneyValueChange;
         _buttonController.OnButtonClick += Upgrade;
     }
-
+    private void OnDestroy()
+    {
+        GameManager.Instance.OnMoneyValueChange -= _buttonController.OnMoneyValueChange;
+        _buttonController.OnButtonClick -= Upgrade;
+    }
     private void Upgrade()
     {
-        if(!IsUnlock)
+        if (!IsUnlock)
         {
             IsUnlock = true;
             UpdateButtonState();
             SetModel(Level);
             OnBuildUpgrade?.Invoke(_itemsContainer.UnlockPrice);
         }
-        else if(_itemsContainer.IsUpgradeExist(Level))
+        else if (_itemsContainer.IsUpgradeExist(Level + 1))
         {
             Level++;
             UpdateButtonState();
@@ -53,11 +58,11 @@ public class BuildItem : MonoBehaviour
 
     private void UpdateButtonState()
     {
-        if(!IsUnlock)
+        if (!IsUnlock)
         {
             _buttonController.UpdateButton("BUY", _itemsContainer.UnlockPrice);
         }
-        else if(_itemsContainer.IsUpgradeExist(Level))
+        else if (_itemsContainer.IsUpgradeExist(Level))
         {
             _buttonController.UpdateButton("UPGRADE", GetPrice(Level));
         }
@@ -69,38 +74,36 @@ public class BuildItem : MonoBehaviour
 
     private float GetPrice(int level)
     {
-        return (float) Math.Round(_itemsContainer.UpgradePrice * Mathf.Pow(_itemsContainer.PriceMultiplier, level),2); 
+        return (float) Math.Round(_itemsContainer.UpgradePrice * Mathf.Pow(_itemsContainer.PriceMultiplier, level), 2);
     }
 
     private void SetModel(int level)
     {
         var buildItemConfig = _itemsContainer.GetUpgrade(level);
-        if(_currentModel != null)
+        if (_currentModel != null)
         {
             Destroy(_currentModel);
         }
-       _currentModel = Instantiate(buildItemConfig.Model);
+        _currentModel = Instantiate(buildItemConfig.Model);
         _currentModel.transform.parent = _modelPoint;
         _currentModel.transform.localPosition = Vector3.zero;
+        _currentModel.transform.localRotation = _modelPoint.rotation;
 
         if (_timerCoroutine != null)
         {
             StopCoroutine(_timerCoroutine);
         }
         _timerCoroutine = StartCoroutine(Timer());
-        OnProcess?.Invoke(_itemsContainer.GetUpgrade(Level).ProcessResult);
+       
     }
 
     private IEnumerator Timer()
     {
-        while(true)
+        while (true)
         {
             yield return new WaitForSeconds(1);
+            OnProcess?.Invoke(_itemsContainer.GetUpgrade(Level).ProcessResult);
         }
     }
-    private void OnDestroy()
-    {
-        GameManager.Instance.OnMoneyValueChange -= _buttonController.OnMoneyValueChange;
-        _buttonController.OnButtonClick -= Upgrade;
-    }
+
 }

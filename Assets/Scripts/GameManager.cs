@@ -21,11 +21,10 @@ public class GameManager : MonoBehaviour
             Debug.Log(value);
             if (value < 0)
                 return;
-            if (value == _money)
-                return;
+           
 
             _money = value;
-            _money = (float)Math.Round(_money, 2);
+            _money = (float) Math.Round(_money, 2);
             OnMoneyValueChange?.Invoke(_money);
           
         }
@@ -48,9 +47,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
-       
         _buildingController.Initialize(_saveSystem.GameData);
         _uIControllerIDLE.SwitchPanels(true);
+        _money = _saveSystem.GameData.Money;
     }
     private void OnApplicationFocus(bool focus)
     {
