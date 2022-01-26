@@ -104,6 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1414520354176866996}
+  - component: {fileID: 381866447028782306}
   m_Layer: 0
   m_Name: BuildPlace
   m_TagString: Untagged
@@ -128,6 +129,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381866447028782306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135942813958644442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d0fe71a408a41b8a1738806f4a9847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemsContainer: {fileID: 11400000, guid: 9308ed336e2764aa393e231c5eb3ef07, type: 2}
+  _modelPoint: {fileID: 202108045241545459}
 --- !u!1 &2673335723243194311
 GameObject:
   m_ObjectHideFlags: 0
@@ -168,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 139983155833236538, guid: ec8c25c92a5334c9e8ab75373d90ab44, type: 3}
       propertyPath: m_Name
       value: BuildCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686088957686900166, guid: ec8c25c92a5334c9e8ab75373d90ab44, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6992259832007571150, guid: ec8c25c92a5334c9e8ab75373d90ab44, type: 3}
       propertyPath: m_Pivot.x
