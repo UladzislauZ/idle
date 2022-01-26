@@ -20,65 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="68e786c4-b68a-42b5-9efa-8bf792a20344" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Config.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 0.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 0.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 2.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 2.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 3.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 3.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 4.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 4.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 5.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 5.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 6.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 6.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 7.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 7.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 8.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemConfig 8.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemsContainer.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Config/BuildingItemsContainer.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (0).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (0).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (1).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (1).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (2).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (2).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (3).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (3).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (4).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (4).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (5).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (5).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (6).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (6).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (7).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (7).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (8).prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Buildings/Building (8).prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Idle.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Idle.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Configs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemConfig.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemConfig.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemsContainer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemsContainer.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Idle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BuildPlace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/BuildPlace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GamePlace.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GamePlace.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BuildingController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BuildingController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GamePanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GamePanel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LookToCam.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemsContainer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GamePanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/test/CharacterData.cs" root0="FORCE_HIGHLIGHTING" />
@@ -120,17 +68,17 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BuildingsData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SaveSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GamePanel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test/TestSaveManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test/CharacterData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/test/Character.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemConfig.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Configs/BuildingItemsContainer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BuildItem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingButtonController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GamePanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildingController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BuildItem.cs" />
       </list>
     </option>
   </component>
@@ -183,6 +131,7 @@
       <workItem from="1642694298230" duration="9575000" />
       <workItem from="1643014814443" duration="4113000" />
       <workItem from="1643126876942" duration="10252000" />
+      <workItem from="1643212069441" duration="1728000" />
     </task>
     <servers />
   </component>

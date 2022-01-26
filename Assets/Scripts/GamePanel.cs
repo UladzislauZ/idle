@@ -16,7 +16,7 @@ public class GamePanel : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.Inst.OnMoneyValueChange += OnMoneyChanged;
+        GameManager.Inst.OnMoneyValueChange -= OnMoneyChanged;
     }
 
     private void OnMoneyChanged(float value)

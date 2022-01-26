@@ -28,6 +28,9 @@ public class BuildItem : MonoBehaviour
         IsUnlocked = unlockState;
         Level = level;
         GetComponentInChildren<Canvas>().worldCamera = Camera.main;
+        
+        _buttonController.Initialize();
+        
         if (unlockState && level >= 0)
             SetModel(level);
         UpdateButtonState();
@@ -40,17 +43,16 @@ public class BuildItem : MonoBehaviour
         if (!IsUnlocked)
         {
             IsUnlocked = true;
-            UpdateButtonState();
-            SetModel(Level);
-            OnBuildUpgrade?.Invoke(_itemsContainer.UnlockPrice);
+            //OnBuildUpgrade?.Invoke(_itemsContainer.UnlockPrice);
         }
         else if (_itemsContainer.IsUpgradeExist(Level + 1))
         {
             Level++;
-            UpdateButtonState();
-            SetModel(Level);
-            OnBuildUpgrade?.Invoke(GetPrice(Level));
+            //OnBuildUpgrade?.Invoke(GetPrice(Level));
         }
+        OnBuildUpgrade?.Invoke(GetPrice(Level));
+        UpdateButtonState();
+        SetModel(Level);
     }
 
     private void UpdateButtonState()

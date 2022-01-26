@@ -30,7 +30,7 @@ public class BuildingController : MonoBehaviour
             if (_buildItems[i] != null)
             {
                 _buildItems[i].OnProcess -= OnProcess;
-                _buildItems[i].OnBuildUpgrade += OnBuildUpgrade;
+                _buildItems[i].OnBuildUpgrade -= OnBuildUpgrade;
             }
         }
     }

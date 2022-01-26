@@ -18,6 +18,10 @@ public class BuildingButtonController : MonoBehaviour
     private void Awake()
     {
         _button = GetComponent<Button>();
+    }
+
+    public void Initialize()
+    {
         _button.onClick.AddListener(OnClick);
     }
 
