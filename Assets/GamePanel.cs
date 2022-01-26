@@ -19,6 +19,7 @@ public class GamePanel : MonoBehaviour
     private void OnMoneyChanged(float value)
     {
         moneyText.text = value.ToString();
+        Debug.Log(value);
     }
     
 }

@@ -40,6 +40,7 @@ public class BuildingController : MonoBehaviour
     private void OnProcess(int value)
     {
         GameManager.Instance.Money += value;
+        Debug.Log("OnProcess:"+value);
     }
 
     public BuildingData[] GetBuildingData()

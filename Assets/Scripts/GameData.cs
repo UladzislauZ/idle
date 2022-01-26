@@ -1,12 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable]
 public class GameData 
 {
     private const int BuildingCount = 4;
-    public float Money = 100;
+    public float Money = 1000;
     public BuildingData[] BuildingData;
      
     public GameData()
