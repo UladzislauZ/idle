@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7950f3d9c2ba94a4da14799139e4c719, type: 3}
   m_Name: BuildingItemContainer
   m_EditorClassIdentifier: 
-  _unlockPrice: 10
-  _upgradePrice: 15
-  _priceMultiplier: 1.7
+  _unlockPrice: 25
+  _upgradePrice: 50
+  _priceMultiplier: 1.5
   _buildingItemConfigs:
   - {fileID: 11400000, guid: 64160b282b6b77046adcb7cc21e970bf, type: 2}
   - {fileID: 11400000, guid: a7cd5453c101bad4aa71d2645c7736fd, type: 2}

@@ -25,6 +25,7 @@ public class BuildItem : MonoBehaviour
     }
     public void Initialize(bool isUnlock, int level)
     {
+        
         IsUnlock = isUnlock;
         Level = level;
         GetComponentInChildren<Canvas>().worldCamera = Camera.main;
@@ -32,6 +33,7 @@ public class BuildItem : MonoBehaviour
         UpdateButtonState();
         GameManager.Instance.OnMoneyValueChange += _buttonController.OnMoneyValueChange;
         _buttonController.OnButtonClick += Upgrade;
+        _buttonController.OnMoneyValueChange(GameManager.Instance.Money);
     }
     private void OnDestroy()
     {
@@ -54,15 +56,17 @@ public class BuildItem : MonoBehaviour
             SetModel(Level);
             OnBuildUpgrade?.Invoke(GetPrice(Level));
         }
+       
     }
 
     private void UpdateButtonState()
     {
+        
         if (!IsUnlock)
         {
             _buttonController.UpdateButton("BUY", _itemsContainer.UnlockPrice);
         }
-        else if (_itemsContainer.IsUpgradeExist(Level))
+        else if (_itemsContainer.IsUpgradeExist(Level + 1))
         {
             _buttonController.UpdateButton("UPGRADE", GetPrice(Level));
         }
@@ -74,7 +78,7 @@ public class BuildItem : MonoBehaviour
 
     private float GetPrice(int level)
     {
-        return (float) Math.Round(_itemsContainer.UpgradePrice * Mathf.Pow(_itemsContainer.PriceMultiplier, level), 2);
+        return (float)Math.Round(_itemsContainer.UpgradePrice * Mathf.Pow(_itemsContainer.PriceMultiplier, level));
     }
 
     private void SetModel(int level)
@@ -94,7 +98,7 @@ public class BuildItem : MonoBehaviour
             StopCoroutine(_timerCoroutine);
         }
         _timerCoroutine = StartCoroutine(Timer());
-       
+
     }
 
     private IEnumerator Timer()

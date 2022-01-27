@@ -18,13 +18,12 @@ public class GameManager : MonoBehaviour
         get => _money;
         set
         {
-            Debug.Log(value);
             if (value < 0)
                 return;
            
 
             _money = value;
-            _money = (float) Math.Round(_money, 2);
+            _money = (float) Math.Round(_money);
             OnMoneyValueChange?.Invoke(_money);
           
         }

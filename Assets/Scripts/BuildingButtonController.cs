@@ -28,6 +28,7 @@ public class BuildingButtonController : MonoBehaviour
     private void OnClick()
     {
         OnButtonClick?.Invoke();
+        SetState(false);
     }
 
     private void SetState(bool isActive)

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7950f3d9c2ba94a4da14799139e4c719, type: 3}
+  m_Name: BuildingItemContainer 1
+  m_EditorClassIdentifier: 
+  _unlockPrice: 200
+  _upgradePrice: 250
+  _priceMultiplier: 1.5
+  _buildingItemConfigs:
+  - {fileID: 11400000, guid: 6ac4dcb3217558544929dfd906d83f99, type: 2}
+  - {fileID: 11400000, guid: 0390b0fd469f8724eba754ae0993774d, type: 2}
+  - {fileID: 11400000, guid: 1431a4a908b9dc94db45fbbf5398c102, type: 2}
+  - {fileID: 11400000, guid: 9c60f0d706feec145aa032094a46258f, type: 2}
+  - {fileID: 11400000, guid: 16f872793961e8d429c74b5ae896e6df, type: 2}
+  - {fileID: 11400000, guid: 5c97cf77d760cef41b8c7fa724aeebf6, type: 2}
+  - {fileID: 11400000, guid: dce438f5188b88d42a31c46253a6e80d, type: 2}
+  - {fileID: 11400000, guid: 6e2741945bde07c4bb98857327eb0438, type: 2}

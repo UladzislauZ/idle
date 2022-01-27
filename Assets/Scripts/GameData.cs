@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameData 
 {
     private const int BuildingCount = 4;
-    public float Money = 1000;
+    public float Money = 200;
     public BuildingData[] BuildingData;
      
     public GameData()
