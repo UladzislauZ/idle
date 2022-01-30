@@ -285,6 +285,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &287824776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287824772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92445ee6e54c7ca499dc3a60c9fd174c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &558885270 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6993768386905242855, guid: b32a8b93c7c07224b8ba044ca8194c9b, type: 3}

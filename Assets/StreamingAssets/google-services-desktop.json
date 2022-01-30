@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "976994159465",
+    "project_id": "test-caa85",
+    "storage_bucket": "test-caa85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:976994159465:android:427fe12b89d5ae40974bf8",
+        "android_client_info": {
+          "package_name": "com.DVmoro.IdleGame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "976994159465-rdpe582tijbph4c5a5hu34bvjfonv7m5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-GOG2Eep4Ola4ncEZnzATH2BeVxe1CHo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "976994159465-rdpe582tijbph4c5a5hu34bvjfonv7m5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

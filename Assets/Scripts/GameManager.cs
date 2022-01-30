@@ -61,8 +61,10 @@ public class GameManager : MonoBehaviour
     private void SaveData()
     {
         _saveSystem.GameData.Money = _money;
-        _saveSystem.GameData.BuildingData = _buildingController.GetBuildingData(); ; 
-        _saveSystem.SaveData();
+        _saveSystem.GameData.BuildingData = _buildingController.GetBuildingData(); ;
+        // _saveSystem.SaveData();
+        //_saveSystem.SaveDataJson();
+        _saveSystem.SaveDataBin();
     }
     
     public void StartGame()
