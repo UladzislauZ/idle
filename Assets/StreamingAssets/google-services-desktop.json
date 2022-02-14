@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "98187903577",
+    "project_id": "idle-city-d631f",
+    "storage_bucket": "idle-city-d631f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:98187903577:android:2cec9698169ecd11f12748",
+        "android_client_info": {
+          "package_name": "by.zayac.idle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "98187903577-1cr2hpd6s2972ehe0dhq24efmv6e3li7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYqrfk9SP9D498kFjxHdR1YOLAd2lk2gw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "98187903577-1cr2hpd6s2972ehe0dhq24efmv6e3li7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
